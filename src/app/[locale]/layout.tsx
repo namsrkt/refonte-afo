@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { LocaleSwitcher } from "@/components/common/locale-switcher";
+import { Navbar } from "@/components/common/navbar";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -50,11 +50,9 @@ export default async function RootLayout({
       lang={locale}
       className={`${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col pt-16">
         <NextIntlClientProvider>
-          <div className="fixed top-4 right-4 z-50">
-            <LocaleSwitcher />
-          </div>
+          <Navbar />
           {children}
         </NextIntlClientProvider>
       </body>

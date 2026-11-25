@@ -21,13 +21,13 @@ export function LocaleSwitcher() {
   }
 
   return (
-    <label className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
+    <label className="flex items-center gap-2 text-sm text-muted-foreground">
       <span className="sr-only">{t("label")}</span>
       <select
         defaultValue={locale}
         onChange={onLocaleChange}
         disabled={isPending}
-        className="rounded-full border border-black/[.08] bg-white px-3 py-1.5 text-sm text-black transition-colors hover:bg-black/[.04] disabled:opacity-50 dark:border-white/[.145] dark:bg-black dark:text-zinc-50 dark:hover:bg-[#1a1a1a]"
+        className="rounded-full border border-border bg-background px-3 py-1.5 text-sm text-foreground transition-colors hover:bg-muted disabled:opacity-50"
       >
         {routing.locales.map((loc) => (
           <option key={loc} value={loc}>

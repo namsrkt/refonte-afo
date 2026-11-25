@@ -6,6 +6,11 @@
   "LocaleSwitcher": {
     "label": "Change language"
   },
+  "Nav": {
+    "label": "Main navigation",
+    "brand": "AFO Redesign",
+    "home": "Home"
+  },
   "HomePage": {
     "title": "To get started, edit the <code>page.tsx</code> file.",
     "instructions": "Looking for a starting point or more instructions? Head over to <templates>Templates</templates> or the <learning>Learning</learning> center.",

@@ -6,6 +6,11 @@
   "LocaleSwitcher": {
     "label": "Changer de langue"
   },
+  "Nav": {
+    "label": "Navigation principale",
+    "brand": "Refonte AFO",
+    "home": "Accueil"
+  },
   "HomePage": {
     "title": "Pour commencer, modifiez le fichier <code>page.tsx</code>.",
     "instructions": "Vous cherchez un point de départ ou plus d'instructions ? Consultez les <templates>modèles</templates> ou le <learning>centre d'apprentissage</learning>.",
