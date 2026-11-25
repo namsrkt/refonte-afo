@@ -1,40 +1,42 @@
 "use client";
 
-import { useLocale, useTranslations, type Locale } from "next-intl";
-import { useTransition } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import { cn } from "@/lib/utils";
 
 export function LocaleSwitcher() {
   const locale = useLocale();
   const t = useTranslations("LocaleSwitcher");
-  const router = useRouter();
   const pathname = usePathname();
-  const [isPending, startTransition] = useTransition();
-
-  function onLocaleChange(event: React.ChangeEvent<HTMLSelectElement>) {
-    const nextLocale = event.target.value as Locale;
-
-    startTransition(() => {
-      router.replace(pathname, { locale: nextLocale });
-    });
-  }
+  const router = useRouter();
 
   return (
-    <label className="flex items-center gap-2 text-sm text-muted-foreground">
-      <span className="sr-only">{t("label")}</span>
-      <select
-        defaultValue={locale}
-        onChange={onLocaleChange}
-        disabled={isPending}
-        className="rounded-full border border-border bg-background px-3 py-1.5 text-sm text-foreground transition-colors hover:bg-muted disabled:opacity-50"
-      >
-        {routing.locales.map((loc) => (
-          <option key={loc} value={loc}>
-            {loc.toUpperCase()}
-          </option>
-        ))}
-      </select>
-    </label>
+    <div
+      role="group"
+      aria-label={t("label")}
+      className="flex items-center rounded-full border border-white/30 p-[3px]"
+    >
+      {routing.locales.map((code) => {
+        const isActive = locale === code;
+
+        return (
+          <button
+            key={code}
+            type="button"
+            aria-pressed={isActive}
+            onClick={() => router.replace(pathname, { locale: code })}
+            className={cn(
+              "rounded-full px-3 py-2 text-sm uppercase leading-none transition-colors",
+              isActive
+                ? "bg-white font-medium text-[#1E3A5F]"
+                : "text-white hover:text-white/80",
+            )}
+          >
+            {code}
+          </button>
+        );
+      })}
+    </div>
   );
 }

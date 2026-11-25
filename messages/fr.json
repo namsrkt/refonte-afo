@@ -4,12 +4,16 @@
     "description": "Application Next.js pour la refonte AFO"
   },
   "LocaleSwitcher": {
-    "label": "Changer de langue"
+    "label": "Langue"
   },
   "Nav": {
+    "brand": "AllForOne",
     "label": "Navigation principale",
-    "brand": "Refonte AFO",
-    "home": "Accueil"
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Réalisations",
+    "blog": "Blog",
+    "testimonials": "Témoignages"
   },
   "HomePage": {
     "title": "Pour commencer, modifiez le fichier <code>page.tsx</code>.",
@@ -18,5 +22,21 @@
     "vercelLogoAlt": "Logotype Vercel",
     "deployNow": "Déployer maintenant",
     "documentation": "Documentation"
+  },
+  "ServicesPage": {
+    "title": "Services",
+    "description": "Contenu à venir."
+  },
+  "ProjectsPage": {
+    "title": "Réalisations",
+    "description": "Contenu à venir."
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Contenu à venir."
+  },
+  "TestimonialsPage": {
+    "title": "Témoignages",
+    "description": "Contenu à venir."
   }
 }

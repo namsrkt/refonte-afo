@@ -50,7 +50,7 @@ export default async function RootLayout({
       lang={locale}
       className={`${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col pt-16">
+      <body className="min-h-full flex flex-col pt-24">
         <NextIntlClientProvider>
           <Navbar />
           {children}

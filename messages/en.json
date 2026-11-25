@@ -4,12 +4,16 @@
     "description": "Next.js application for the AFO redesign"
   },
   "LocaleSwitcher": {
-    "label": "Change language"
+    "label": "Language"
   },
   "Nav": {
+    "brand": "AllForOne",
     "label": "Main navigation",
-    "brand": "AFO Redesign",
-    "home": "Home"
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "blog": "Blog",
+    "testimonials": "Testimonials"
   },
   "HomePage": {
     "title": "To get started, edit the <code>page.tsx</code> file.",
@@ -18,5 +22,21 @@
     "vercelLogoAlt": "Vercel logomark",
     "deployNow": "Deploy Now",
     "documentation": "Documentation"
+  },
+  "ServicesPage": {
+    "title": "Services",
+    "description": "Content coming soon."
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "Content coming soon."
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Content coming soon."
+  },
+  "TestimonialsPage": {
+    "title": "Testimonials",
+    "description": "Content coming soon."
   }
 }

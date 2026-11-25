@@ -1,9 +1,13 @@
+import { Container } from "@/components/common/container";
+
 function HeroSection() {
-    return ( 
-        <section>
-            <h1>Hero Section</h1>
-        </section>
-     );
+  return (
+    <section>
+      <Container>
+        <h1>Hero Section</h1>
+      </Container>
+    </section>
+  );
 }
 
 export default HeroSection;
