@@ -1,0 +1,17 @@
+{
+  "Metadata": {
+    "title": "Refonte AFO",
+    "description": "Application Next.js pour la refonte AFO"
+  },
+  "LocaleSwitcher": {
+    "label": "Changer de langue"
+  },
+  "HomePage": {
+    "title": "Pour commencer, modifiez le fichier <code>page.tsx</code>.",
+    "instructions": "Vous cherchez un point de départ ou plus d'instructions ? Consultez les <templates>modèles</templates> ou le <learning>centre d'apprentissage</learning>.",
+    "nextLogoAlt": "Logo Next.js",
+    "vercelLogoAlt": "Logotype Vercel",
+    "deployNow": "Déployer maintenant",
+    "documentation": "Documentation"
+  }
+}
