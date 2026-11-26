@@ -38,5 +38,28 @@
   "TestimonialsPage": {
     "title": "Témoignages",
     "description": "Contenu à venir."
+  },
+  "homeRealization": {
+    "title": "Nos réalisations",
+    "description": "Des expériences digitales modernes, fluides et créatives conçues pour offrir une navigation intuitive, capter l’attention de vos utilisateurs et renforcer durablement la présence et l’image de votre entreprise sur le web.",
+    "button": "Voir tous les projets"
+  },
+  "ProjectsRealizations": {
+    "atariaTech": {
+      "title": "Ataria Tech",
+      "description": "Site web pour vendre des produits informatiques et technologiques"
+    },
+    "tantely": {
+      "title": "Tantely",
+      "description": "Site web pour vendre des produits de santé et de bien etre"
+    },
+    "allforkids": {
+      "title": "AllForKids",
+      "description": "Site web pour vendre des produits informatiques et technologiques"
+    }, 
+    "madadigitalsecurity": {
+      "title": "MadaDigitalSecurity",
+      "description": "Site web pour vendre des produits de santé et de bien etre"
+    }
   }
 }
