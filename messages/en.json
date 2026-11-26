@@ -38,5 +38,28 @@
   "TestimonialsPage": {
     "title": "Testimonials",
     "description": "Content coming soon."
+  },
+  "HomeNewsBlog": {
+    "title": "News & Blog",
+    "description": "Discover our tips, news and inspiration on design, web development and digital to support the growth of your business.",
+    "button": "See all articles",
+    "readMore": "Read more",
+    "articles": {
+      "uiTrends": {
+        "category": "UI/UX Design",
+        "title": "UI/UX trends to adopt for a modern website",
+        "excerpt": "Discover the best UI/UX practices to create modern, intuitive and pleasant interfaces."
+      },
+      "websiteEssential": {
+        "category": "Development",
+        "title": "Why a website is essential for your business",
+        "excerpt": "A professional website improves your visibility, strengthens your credibility and attracts new customers."
+      },
+      "facebookCreations": {
+        "category": "Community Management",
+        "title": "Discover our latest creations on Facebook",
+        "excerpt": "Follow our latest projects, posts and news on our Facebook page."
+      }
+    }
   }
 }

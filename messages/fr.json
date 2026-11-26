@@ -38,5 +38,28 @@
   "TestimonialsPage": {
     "title": "Témoignages",
     "description": "Contenu à venir."
+  },
+  "HomeNewsBlog": {
+    "title": "News & Blog",
+    "description": "Découvrez nos conseils, actualités et inspirations autour du design, du développement web et du digital pour accompagner la croissance de votre entreprise.",
+    "button": "Voir tous les articles",
+    "readMore": "Lire plus",
+    "articles": {
+      "uiTrends": {
+        "category": "UI /UX Design",
+        "title": "Les tendances UI/UX à adopter pour un site moderne",
+        "excerpt": "Découvrez les meilleures pratiques UI/UX pour créer des interfaces modernes, intuitives et agréables à utiliser."
+      },
+      "websiteEssential": {
+        "category": "Développement",
+        "title": "Pourquoi un site web est essentiel pour votre entreprise",
+        "excerpt": "Un site web professionnel permet d'améliorer votre visibilité, renforcer votre crédibilité et attirer de nouveaux clients."
+      },
+      "facebookCreations": {
+        "category": "Community Management",
+        "title": "Découvrez nos dernières créations sur Facebook",
+        "excerpt": "Suivez nos dernières réalisations, publications et actualités sur notre page Facebook."
+      }
+    }
   }
 }
