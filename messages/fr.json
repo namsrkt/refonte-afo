@@ -38,5 +38,28 @@
   "TestimonialsPage": {
     "title": "Témoignages",
     "description": "Contenu à venir."
+  },
+  "HomeProcess": {
+    "badge": "Comment ça marche ?",
+    "title": "Processus de travail",
+    "subtitle": "Des offres flexibles et adaptées à vos besoins pour vous accompagner dans la création de solutions digitales modernes, performantes et accessibles.",
+    "steps": {
+      "analysis": {
+        "title": "Analyse",
+        "description": "Comprendre votre activité, vos besoins et vos objectifs"
+      },
+      "design": {
+        "title": "Conception",
+        "description": "Création des interfaces centrées sur l'expérience utilisateur"
+      },
+      "development": {
+        "title": "Développement",
+        "description": "Conception en solutions digitales performantes et fluides"
+      },
+      "launch": {
+        "title": "Test & Mise en ligne",
+        "description": "Nous testons l'ensemble du projet afin de garantir sa qualité"
+      }
+    }
   }
 }
