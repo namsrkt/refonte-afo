@@ -50,5 +50,8 @@
   "TestimonialsPage": {
     "title": "Testimonials",
     "description": "Content coming soon."
+  },
+  "CollabSection": {
+    "description": "They placed their trust in us for all of our services."
   }
 }

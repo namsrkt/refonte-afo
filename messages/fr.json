@@ -50,5 +50,8 @@
   "TestimonialsPage": {
     "title": "Témoignages",
     "description": "Contenu à venir."
+  },
+  "CollabSection": {
+    "description": "Ils nous ont fait confiance pour l'ensemble de nos services."
   }
 }
