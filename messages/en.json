@@ -15,6 +15,18 @@
     "blog": "Blog",
     "testimonials": "Testimonials"
   },
+  "Hero": {
+    "titleLine1": "Transform your ideas",
+    "titleLine2": "into digital experiences",
+    "ctaQuote": "Request a quote",
+    "ctaContact": "Contact us",
+    "social": {
+      "whatsapp": "Chat on WhatsApp",
+      "instagram": "View our Instagram page",
+      "facebook": "View our Facebook page",
+      "twitter": "Follow us on Twitter"
+    }
+  },
   "HomePage": {
     "title": "To get started, edit the <code>page.tsx</code> file.",
     "instructions": "Looking for a starting point or more instructions? Head over to <templates>Templates</templates> or the <learning>Learning</learning> center.",

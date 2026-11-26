@@ -15,6 +15,18 @@
     "blog": "Blog",
     "testimonials": "Témoignages"
   },
+  "Hero": {
+    "titleLine1": "Transformez vos idées",
+    "titleLine2": "en expériences digitales",
+    "ctaQuote": "Demander un devis",
+    "ctaContact": "Contactez-Nous",
+    "social": {
+      "whatsapp": "Discuter sur WhatsApp",
+      "instagram": "Voir notre page Instagram",
+      "facebook": "Voir notre page Facebook",
+      "twitter": "Suivre sur Twitter"
+    }
+  },
   "HomePage": {
     "title": "Pour commencer, modifiez le fichier <code>page.tsx</code>.",
     "instructions": "Vous cherchez un point de départ ou plus d'instructions ? Consultez les <templates>modèles</templates> ou le <learning>centre d'apprentissage</learning>.",

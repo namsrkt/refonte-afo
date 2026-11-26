@@ -1,10 +1,5 @@
-import HeroSection from "@/features/home/heroSection/hero-section";
+import { HeroSection } from "@/features/home/hero/components/hero-section";
 
-export default async function Home() {
-
-  return (
-    <>
-      <HeroSection/>
-    </>
-  );
+export default function Home() {
+  return <HeroSection />;
 }
