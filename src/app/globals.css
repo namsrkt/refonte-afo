@@ -3,6 +3,7 @@
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant night (&:where([data-sky="night"] *));
 
 @theme inline {
   --color-background: var(--background);
@@ -80,6 +81,31 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --navbar-bg: #0752b5;
+  --logo-color: #0b3d91;
+  --cloud-filter: none;
+  --social-bg: #ffffff;
+  --bank-fade: #ffffff;
+}
+
+:root[data-sky="night"] {
+  --navbar-bg: #050b1f;
+}
+
+:root[data-weather="rain"] {
+  --navbar-bg: #3F5A78;
+}
+
+:root[data-weather="thunder"] {
+  --navbar-bg: #222E3A;
+}
+
+:root[data-sky="night"][data-weather="rain"] {
+  --navbar-bg: #03070F;
+}
+
+:root[data-sky="night"][data-weather="thunder"] {
+  --navbar-bg: #01040A;
 }
 
 .dark {
