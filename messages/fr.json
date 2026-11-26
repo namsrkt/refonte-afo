@@ -18,5 +18,10 @@
     "vercelLogoAlt": "Logotype Vercel",
     "deployNow": "Déployer maintenant",
     "documentation": "Documentation"
+  },
+  "TestimonialSection":{
+    "question":"Technologies",
+    "title":"Quelques <highlight>technologies</highlight> qui alimenteront vos plateformes",
+    "description":"Les technologies que nous utilisons garantissent des plateformes performantes, évolutifs et sécurisés, adaptées à vos besoins spécifiques et aux défis de demain"
   }
 }
