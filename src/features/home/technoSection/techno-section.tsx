@@ -10,7 +10,7 @@ import figmaImage from "/public/image/figma.png";
 import Image from "next/image";
 import { AnimatedBeam } from "@/components/ui/animated-beam";
 
-function TestimonialSection() {
+function TechnoSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const img1Ref = useRef<HTMLImageElement>(null);
   const img2Ref = useRef<HTMLImageElement>(null);
@@ -126,7 +126,7 @@ function TestimonialSection() {
   );
 }
 
-export default TestimonialSection;
+export default TechnoSection;
 
 const Square = forwardRef<
   HTMLDivElement,

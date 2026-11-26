@@ -136,6 +136,8 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
     startYOffset,
     endXOffset,
     endYOffset,
+    cornerType,
+    turnRatio,
   ]);
 
   return (

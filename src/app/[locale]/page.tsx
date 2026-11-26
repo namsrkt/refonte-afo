@@ -1,11 +1,11 @@
 import HeroSection from "@/features/home/heroSection/hero-section";
-import TestimonialSection from "@/features/home/testimonialSection/testimonial-section";
+import TechnoSection from "@/features/home/technoSection/techno-section";
 
 export default async function Home() {
   return (
     <>
       <HeroSection />
-      <TestimonialSection />
+      <TechnoSection />
     </>
   );
 }
