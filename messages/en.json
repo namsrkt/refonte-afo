@@ -27,6 +27,66 @@
       "twitter": "Follow us on Twitter"
     }
   },
+  "HomeServices": {
+    "title": "Services",
+    "description": "We turn your technical challenges into growth opportunities with complete and proven expertise.",
+    "quoteCta": "Request a quote",
+    "moreCta": "Learn more",
+    "items": [
+      {
+        "id": "app-desktop-mobile",
+        "title": "Desktop & Mobile Applications",
+        "description": "A custom application tailored to iOS/Android or desktop platforms.",
+        "tags": [
+          "iOS & Android app",
+          "Custom website",
+          "SaaS",
+          "Showcase website",
+          "E-commerce"
+        ],
+        "imageAlt": "Project dashboard displayed on a tablet"
+      },
+      {
+        "id": "ui-ux-design",
+        "title": "UI/UX Design",
+        "description": "An intuitive, user-centered application mockup built around the user experience.",
+        "tags": ["UX research", "Persona", "UI mockup", "Prototype", "Testing"],
+        "imageAlt": "Interface mockup displayed on a screen"
+      },
+      {
+        "id": "graphic-design",
+        "title": "Graphic Design",
+        "description": "Logo, poster, brochure and marketing material design, along with visual presentations.",
+        "tags": [
+          "Social media posts",
+          "Logo",
+          "Branding",
+          "Infographics",
+          "Visual identity"
+        ],
+        "imageAlt": "Visual identity variations applied to fabric"
+      },
+      {
+        "id": "community-management",
+        "title": "Community Management",
+        "description": "Growing and engaging your social media communities with content that reflects who you are.",
+        "tags": [
+          "Social media management",
+          "SEA/SEO",
+          "Video editing",
+          "Photography"
+        ],
+        "imageAlt": "Social media icons around a person at a computer"
+      },
+      {
+        "id": "admin-sys-reseaux",
+        "title": "Admin Sys & Networks",
+        "description": "Setting up, securing and monitoring your infrastructure and networks.",
+        "tags": ["Cloud", "Cybersecurity", "Networks", "Deployment"],
+        "imageAlt": "Corporate infrastructure and networks"
+      }
+    ]
+  },
   "HomePage": {
     "title": "To get started, edit the <code>page.tsx</code> file.",
     "instructions": "Looking for a starting point or more instructions? Head over to <templates>Templates</templates> or the <learning>Learning</learning> center.",
@@ -34,6 +94,24 @@
     "vercelLogoAlt": "Vercel logomark",
     "deployNow": "Deploy Now",
     "documentation": "Documentation"
+  },
+  "TestimonialSection":{
+    "question":"Technologies",
+    "title":"Some <highlight>technologies</highlight> that will power your platforms",
+    "description":"The technologies we use ensure high-performance, scalable, and secure platforms, tailored to your specific needs and the challenges of tomorrow."
+  "AboutSection": {
+    "image-description": {
+      "about-section": "Image representing an exchange"
+    },
+    "question": "Who are we?",
+    "title": "Let’s work together to transform <highlight>your ideas</highlight> into modern digital experiences.",
+    "description": "AllForOne is a creative digital agency specializing in the design of modern, intuitive, and high-performance digital solutions.",
+    "list-advantage": {
+      "0": "Available at any time",
+      "1": "Modern and responsive design",
+      "2": "Optimized performance"
+    },
+    "button-text": "Discover more"
   },
   "ServicesPage": {
     "title": "Services",
@@ -53,5 +131,80 @@
   },
   "CollabSection": {
     "description": "They placed their trust in us for all of our services."
+  "TestimonialSection": {
+    "intro": "What our clients say about us",
+    "title": "Customer testimonials",
+    "description": "Discover our clients' reviews and feedback regarding their experience with AllForOne and the quality of our digital services."
+  "HomeProcess": {
+    "badge": "How does it work?",
+    "title": "Our work process",
+    "subtitle": "Flexible offers tailored to your needs to support you in creating modern, high-performing and accessible digital solutions.",
+    "steps": {
+      "analysis": {
+        "title": "Analysis",
+        "description": "Understanding your business, your needs and your goals"
+      },
+      "design": {
+        "title": "Design",
+        "description": "Creating interfaces centered on user experience"
+      },
+      "development": {
+        "title": "Development",
+        "description": "Building high-performing and smooth digital solutions"
+      },
+      "launch": {
+        "title": "Testing & Launch",
+        "description": "We test the whole project to guarantee its quality"
+      }
+  "homeRealization": {
+    "title": "Our Projects",
+    "description": "Modern, smooth, and creative digital experiences designed to provide intuitive navigation, capture your users' attention, and strengthen your company's online presence and image.",
+    "button": "See all projects"
+  },
+  "ProjectsRealizations": {
+    "atariaTech": {
+      "title": "Ataria Tech",
+      "description": "Website for selling IT and technological products"
+    },
+    "tantely": {
+      "title": "Tantely",
+      "description": "Website for selling health and wellness products"
+    },
+    "allforkids": {
+      "title": "AllForKids",
+      "description": "Website for selling IT and technological products"
+    },
+    "madadigitalsecurity": {
+      "title": "MadaDigitalSecurity",
+      "description": "Website for selling health and wellness products"
+    }
+  },
+  "Footer": {
+    "tagline": "Stay up to date with our latest news",
+    "newsletter": "Newsletter",
+    "emailPlaceholder": "Email",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email address",
+    "submit": "Send",
+    "infoTitle": "Information",
+    "address": "Ambatoroaka, Antananarivo",
+    "country": "Madagascar",
+    "hours": "08:00 to 16:30",
+    "contactTitle": "Contact",
+    "navTitle": "Navigation",
+    "servicesTitle": "Our services",
+    "services": {
+      "apps": "Desktop & mobile application",
+      "uiux": "UI/UX Design",
+      "graphic": "Graphic Design",
+      "community": "Community Management",
+      "admin": "Admin Sys & Network"
+    },
+    "copyright": "copyright {year}, allforone, all rights reserved",
+    "social": {
+      "facebook": "View our Facebook page",
+      "whatsapp": "Chat on WhatsApp",
+      "instagram": "View our Instagram page"
+    }
   }
 }

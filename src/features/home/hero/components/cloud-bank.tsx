@@ -26,11 +26,24 @@ function BankGroup({ clouds, hidden = false }: { clouds: BankCloud[]; hidden?: b
   );
 }
 
-function BankTrack({ clouds, duration }: { clouds: BankCloud[]; duration: number }) {
+function BankTrack({
+  clouds,
+  duration,
+  reverse = false,
+}: {
+  clouds: BankCloud[];
+  duration: number;
+  reverse?: boolean;
+}) {
   return (
     <div
       className="cloud-bank-track absolute inset-0 flex w-max"
-      style={{ "--bank-duration": `${duration}s` } as CSSProperties}
+      style={
+        {
+          "--bank-duration": `${duration}s`,
+          animationDirection: reverse ? "reverse" : undefined,
+        } as CSSProperties
+      }
     >
       <BankGroup clouds={clouds} />
       <BankGroup clouds={clouds} hidden />
@@ -38,21 +51,34 @@ function BankTrack({ clouds, duration }: { clouds: BankCloud[]; duration: number
   );
 }
 
-export function CloudBank() {
+export function CloudBank({
+  position = "bottom",
+}: {
+  position?: "top" | "bottom";
+}) {
+  const isTop = position === "top";
+
   return (
     <div
-      className="hero-cloud-filter pointer-events-none absolute inset-x-0 bottom-0 z-0 h-[260px] overflow-hidden"
+      className={`hero-cloud-filter pointer-events-none absolute inset-x-0 z-0 h-[260px] overflow-hidden ${
+        isTop ? "top-0" : "bottom-0"
+      }`}
       aria-hidden="true"
     >
-      <div className="cloud-bank-mask absolute inset-0">
-        <BankTrack clouds={BANK_CLOUDS_BACK} duration={150} />
-        <BankTrack clouds={BANK_CLOUDS_FRONT} duration={95} />
+      <div
+        className={`cloud-bank-mask absolute inset-0 ${isTop ? "rotate-180" : ""}`}
+      >
+        <BankTrack clouds={BANK_CLOUDS_BACK} duration={150} reverse={isTop} />
+        <BankTrack clouds={BANK_CLOUDS_FRONT} duration={95} reverse={isTop} />
       </div>
       <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[30%]"
+        className={`pointer-events-none absolute inset-x-0 h-[30%] ${
+          isTop ? "top-0" : "bottom-0"
+        }`}
         style={{
-          background:
-            "linear-gradient(to top, var(--bank-fade) 0%, var(--bank-fade) 35%, transparent 100%)",
+          background: isTop
+            ? "linear-gradient(to bottom, var(--bank-fade) 0%, var(--bank-fade) 35%, transparent 100%)"
+            : "linear-gradient(to top, var(--bank-fade) 0%, var(--bank-fade) 35%, transparent 100%)",
         }}
       />
     </div>
