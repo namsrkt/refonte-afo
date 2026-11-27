@@ -9,7 +9,7 @@ export async function Navbar() {
   const t = await getTranslations("Nav");
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-[#0752B5]">
+    <header className="fixed inset-x-0 top-0 z-50 bg-[var(--navbar-bg)] transition-colors duration-[1200ms]">
       <Container className="flex h-24 items-center justify-between gap-4">
         <Link href="/" aria-label={t("brand")} className="shrink-0">
           <Image

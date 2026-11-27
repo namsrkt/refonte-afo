@@ -1,0 +1,309 @@
+.cloud-cursor-mask {
+  --cursor-x: -9999px;
+  --cursor-y: -9999px;
+  --cursor-size: 140px;
+  mask-image: radial-gradient(
+    circle var(--cursor-size) at var(--cursor-x) var(--cursor-y),
+    transparent 0%,
+    transparent 55%,
+    #000 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle var(--cursor-size) at var(--cursor-x) var(--cursor-y),
+    transparent 0%,
+    transparent 55%,
+    #000 100%
+  );
+}
+
+@keyframes hero-cloud-drift {
+  from {
+    transform: translate3d(100vw, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.cloud-drift {
+  animation: hero-cloud-drift var(--cloud-duration, 120s) linear infinite;
+  animation-delay: var(--cloud-delay, 0s);
+  will-change: transform;
+}
+
+.hero-cloud-filter {
+  filter: var(--cloud-filter, none);
+  transition: filter 1.2s ease;
+}
+
+.cloud-bank-mask {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 30%,
+    #000 80%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 30%,
+    #000 80%
+  );
+}
+
+@keyframes hero-cloud-bank {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.cloud-bank-track {
+  animation: hero-cloud-bank var(--bank-duration, 120s) linear infinite;
+  will-change: transform;
+}
+
+@keyframes hero-logo-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.logo-marquee {
+  animation: hero-logo-marquee 45s linear infinite;
+  will-change: transform;
+}
+
+.logo-marquee-wrap:hover .logo-marquee {
+  animation-play-state: paused;
+}
+
+.hero-logo {
+  display: block;
+  flex-shrink: 0;
+  background-color: var(--logo-color);
+  transition: background-color 1.2s ease;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.sky-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+html[data-sky="day"]:not([data-weather="rain"]):not([data-weather="thunder"]) .sky-clear-day,
+html[data-sky="night"]:not([data-weather="rain"]):not([data-weather="thunder"]) .sky-clear-night,
+html[data-sky="day"][data-weather="rain"] .sky-rain-day,
+html[data-sky="night"][data-weather="rain"] .sky-rain-night,
+html[data-sky="day"][data-weather="thunder"] .sky-thunder-day,
+html[data-sky="night"][data-weather="thunder"] .sky-thunder-night {
+  opacity: 1;
+}
+
+.sky-glow {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+html[data-sky="night"]:not([data-weather="rain"]):not([data-weather="thunder"]) .sky-glow {
+  opacity: 1;
+}
+
+.hero-stars {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+html[data-sky="night"]:not([data-weather="rain"]):not([data-weather="thunder"]) .hero-stars {
+  opacity: 1;
+}
+
+.hero-star {
+  position: absolute;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  animation: hero-star-twinkle 3s ease-in-out infinite;
+}
+
+@keyframes hero-star-twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.weather-fx {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-rain {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+html[data-weather="rain"] .hero-rain-light {
+  opacity: 1;
+}
+
+.hero-raindrop {
+  position: absolute;
+  top: -12vh;
+  width: 1.5px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to bottom,
+    rgba(190, 216, 245, 0),
+    rgba(200, 224, 250, 0.65)
+  );
+  animation-name: hero-rain-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+@keyframes hero-rain-fall {
+  from {
+    transform: translate3d(0, -12vh, 0) rotate(10deg);
+  }
+  to {
+    transform: translate3d(-7vw, 112vh, 0) rotate(10deg);
+  }
+}
+
+.hero-lightning {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 242, 255, 0.9) 0%,
+    rgba(140, 175, 225, 0.35) 40%,
+    transparent 70%
+  );
+  mix-blend-mode: screen;
+}
+
+html[data-weather="thunder"] .hero-lightning {
+  animation: hero-lightning 6.4s linear infinite;
+}
+
+html[data-weather="thunder"] .hero-lightning-secondary {
+  animation-duration: 8.9s;
+  animation-delay: 2.4s;
+}
+
+@keyframes hero-lightning {
+  0%,
+  3.2%,
+  5.4%,
+  100% {
+    opacity: 0;
+  }
+  3.6% {
+    opacity: 0.34;
+  }
+  3.9% {
+    opacity: 0.06;
+  }
+  4.3% {
+    opacity: 0.3;
+  }
+  4.6% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.18;
+  }
+}
+
+.weather-lightning {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-bolt {
+  position: absolute;
+  opacity: 0;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 18px rgba(180, 214, 255, 0.55));
+}
+
+html[data-weather="thunder"] .hero-bolt {
+  animation-name: hero-bolt-flash;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hero-bolt-flash {
+  0%,
+  3.2%,
+  5.4%,
+  100% {
+    opacity: 0;
+  }
+  3.6% {
+    opacity: 1;
+  }
+  3.9% {
+    opacity: 0.25;
+  }
+  4.3% {
+    opacity: 0.92;
+  }
+  4.6% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cloud-drift {
+    animation: none;
+  }
+  .cloud-bank-track {
+    animation: none;
+  }
+  .logo-marquee {
+    animation: none;
+  }
+  .hero-star {
+    animation: none;
+  }
+  .hero-rain {
+    display: none;
+  }
+  .hero-lightning {
+    display: none;
+  }
+  .hero-bolt {
+    display: none;
+  }
+}
