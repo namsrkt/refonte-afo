@@ -96,19 +96,20 @@
     "documentation": "Documentation"
   },
   "AboutSection": {
-    "image-description":{
-      "about-section":"Image representant un échange"
+    "image-description": {
+      "about-section": "Image représentant un échange"
     },
-    "question":"Qui sommes nous?",
-    "title":"Transformons ensemble <highlight>vos idées</highlight> en expériences digitales moderne",
+    "question": "Qui sommes-nous ?",
+    "title": "Transformons ensemble <highlight>vos idées</highlight> en expériences digitales modernes",
     "description": "AllForOne est une agence digitale créative spécialisée dans la conception de solutions numériques modernes, intuitives et performantes",
-    "list-advantage":{
-      "0":"Disponible à tout moment",
-      "1":"Design moderne et responsive",
-      "2":"Performance optimisée"
+    "list-advantage": {
+      "0": "Disponible à tout moment",
+      "1": "Design moderne et responsive",
+      "2": "Performance optimisée"
     },
-    "button-text":"Découvrir davantage"
-  ,"ServicesPage": {
+    "button-text": "Découvrir davantage"
+  },
+  "ServicesPage": {
     "title": "Services",
     "description": "Contenu à venir."
   },
@@ -136,16 +137,17 @@
     },
     "tantely": {
       "title": "Tantely",
-      "description": "Site web pour vendre des produits de santé et de bien etre"
+      "description": "Site web pour vendre des produits de santé et de bien-être"
     },
     "allforkids": {
       "title": "AllForKids",
       "description": "Site web pour vendre des produits informatiques et technologiques"
-    }, 
+    },
     "madadigitalsecurity": {
       "title": "MadaDigitalSecurity",
-      "description": "Site web pour vendre des produits de santé et de bien etre"
-    },
+      "description": "Site web pour vendre des produits de santé et de bien-être"
+    }
+  },
   "Footer": {
     "tagline": "Reste à jour avec nos dernières actualités",
     "newsletter": "Newsletter",
@@ -174,5 +176,4 @@
       "instagram": "Voir notre page Instagram"
     }
   }
-}
 }
