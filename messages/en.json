@@ -95,6 +95,10 @@
     "deployNow": "Deploy Now",
     "documentation": "Documentation"
   },
+  "TestimonialSection":{
+    "question":"Technologies",
+    "title":"Some <highlight>technologies</highlight> that will power your platforms",
+    "description":"The technologies we use ensure high-performance, scalable, and secure platforms, tailored to your specific needs and the challenges of tomorrow."
   "AboutSection": {
     "image-description": {
       "about-section": "Image representing an exchange"
