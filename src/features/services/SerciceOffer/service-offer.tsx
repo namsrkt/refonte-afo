@@ -19,9 +19,7 @@ export function ServiceOffer() {
             // Wrapper : porte le halo derrière la carte + l'effet hover
             <div
               key={id}
-              className={`relative isolate transition duration-300 hover:-translate-y-1 ${
-                populaire ? "order-first lg:order-none" : ""
-              }`}
+              className="relative isolate transition duration-300 hover:-translate-y-2"
             >
               {populaire && (
                 <>
