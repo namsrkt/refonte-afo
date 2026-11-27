@@ -10,7 +10,7 @@ export async function ServicesSection() {
   return (
     <section
       aria-labelledby="home-services-title"
-      className="bg-neutral-50 py-20 md:py-28"
+      className="bg-white py-20 md:py-28"
     >
       <Container>
         <header className="mb-14 max-w-2xl md:mb-20">

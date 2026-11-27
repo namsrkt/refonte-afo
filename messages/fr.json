@@ -95,10 +95,11 @@
     "deployNow": "Déployer maintenant",
     "documentation": "Documentation"
   },
-  "TestimonialSection":{
-    "question":"Technologies",
-    "title":"Quelques <highlight>technologies</highlight> qui alimenteront vos plateformes",
-    "description":"Les technologies que nous utilisons garantissent des plateformes performantes, évolutifs et sécurisés, adaptées à vos besoins spécifiques et aux défis de demain"
+  "TechnoSection": {
+    "question": "Technologies",
+    "title": "Quelques <highlight>technologies</highlight> qui alimenteront vos plateformes",
+    "description": "Les technologies que nous utilisons garantissent des plateformes performantes, évolutives et sécurisées, adaptées à vos besoins spécifiques et aux défis de demain."
+  },
   "AboutSection": {
     "image-description": {
       "about-section": "Image représentant un échange"
@@ -150,12 +151,16 @@
         "title": "Découvrez nos dernières créations sur Facebook",
         "excerpt": "Suivez nos dernières réalisations, publications et actualités sur notre page Facebook."
       }
+    }
+  },
   "CollabSection": {
     "description": "Ils nous ont fait confiance pour l'ensemble de nos services."
+  },
   "TestimonialSection": {
     "intro": "Ce que nos clients disent de nous",
     "title": "Témoignages clients",
     "description": "Découvrez les avis et retours de nos clients sur leur expérience avec AllForOne et la qualité de nos services digitaux."
+  },
   "HomeProcess": {
     "badge": "Comment ça marche ?",
     "title": "Processus de travail",
@@ -177,6 +182,8 @@
         "title": "Test & Mise en ligne",
         "description": "Nous testons l'ensemble du projet afin de garantir sa qualité"
       }
+    }
+  },
   "homeRealization": {
     "title": "Nos réalisations",
     "description": "Des expériences digitales modernes, fluides et créatives conçues pour offrir une navigation intuitive, capter l’attention de vos utilisateurs et renforcer durablement la présence et l’image de votre entreprise sur le web.",

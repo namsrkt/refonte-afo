@@ -11,7 +11,7 @@ import { WeatherEffects } from "./weather-effects";
 export function HeroSection() {
   return (
     <>
-      <section className="relative isolate flex min-h-[calc(100svh-6rem)] flex-col overflow-hidden -mt-5">
+      <section className="relative isolate flex min-h-[calc(100svh-6rem)] flex-col overflow-hidden -mt-6">
         <SkyBackground />
         <LightningField />
         <HeroClouds />

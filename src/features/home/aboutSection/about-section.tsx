@@ -1,61 +1,27 @@
 "use client";
 
+import "@/features/home/hero/hero.css";
 import Image from "next/image";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { ArrowRight } from "lucide-react";
-import ImageAbout from "/public/image/about-section.jpg";
 import { Check } from "lucide-react";
-import CloudImage from "/public/image/cloud.png";
-import { Fragment, useEffect, useMemo, useRef, useState } from "react";
+import ImageAbout from "/public/image/about-section.jpg";
+import { CtaLink } from "@/components/common/cta-link";
+import { CloudBank } from "@/features/home/hero/components/cloud-bank";
+import { SkyBackground } from "@/features/home/hero/components/sky-background";
 
 const advantages = ["0", "1", "2"] as const;
 
 function AboutSection() {
-  // Juste pour faire réference au container de cette section: pour obtenir la largeur
-  const cloudsContainer = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(0);
   const t = useTranslations("AboutSection");
-  const nbClouds = useMemo(() => {
-    const count = (width / 288) * 2;
-    return Array.from({ length: count }, (_, i) => i);
-  }, [width]);
-  useEffect(() => {
-    // lancer la fonction après que le premier rendu soit fait
-    setTimeout(updateWidth, 0);
-    // fonction qui change la largeur
-    function updateWidth() {
-      if (!cloudsContainer.current) return;
-      setWidth(cloudsContainer.current.getBoundingClientRect().width);
-    }
-    // Evènement qui garde un oeil sur la redimensionnement de la fenêtre
-    window.addEventListener("resize", updateWidth);
-    // Libère l'évènement
-    return () => window.removeEventListener("resize", updateWidth);
-  }, []);
   return (
     <div
-      className="relative isolate grid min-h-full w-full place-items-center overflow-hidden py-24 px-5 xl:px-29.25 sm:py-40 bg-[linear-gradient(180deg,#F7FAFD_0%,#4080D7_24.04%,#FBFDFD_100%)]"
-      ref={cloudsContainer}
+      className="relative isolate grid min-h-full w-full place-items-center overflow-hidden px-5 pt-72 pb-24 xl:px-29.25 sm:pt-80 sm:pb-40"
     >
-      {/* Nuages : haut, et bas (retourné) */}
-      {nbClouds.map((index) => (
-        <Fragment key={index}>
-          <Image
-            src={CloudImage}
-            alt=""
-            style={{ right: `${index * 200}px` }}
-            className="pointer-events-none -z-10 absolute -top-20"
-          />
-          <Image
-            src={CloudImage}
-            alt=""
-            style={{ right: `${index * 200}px` }}
-            className="pointer-events-none -z-10 absolute bottom-0"
-          />
-        </Fragment>
-      ))}
-      <section className="flex flex-col items-center lg:flex-row gap-11 text-[#F7FAFD] sm:px-10">
+      <CloudBank />
+      <CloudBank position="top" />
+      <SkyBackground />
+
+      <section className="relative z-10 flex flex-col items-center lg:flex-row gap-11 text-[#F7FAFD] sm:px-10">
         <Image
           src={ImageAbout}
           alt={t("image-description.about-section")}
@@ -94,24 +60,7 @@ function AboutSection() {
           </ul>
 
           {/* Bouton avec animation au hover */}
-          <Link
-            href=""
-            className="group relative justify-between inline-flex items-center gap-6 overflow-hidden rounded-full border-2 border-white bg-slate-50 p-1.5 pl-6 text-lg text-gray-600 transition-colors duration-500 hover:text-white w-full sm:w-auto"
-          >
-            <span
-              aria-hidden
-              className="absolute bottom-1.5 right-1.5 top-1.5 w-11 rounded-full bg-[#d94f4f] transition-all duration-500 ease-out group-hover:bottom-0 group-hover:right-0 group-hover:top-0 group-hover:w-full"
-            />
-            <span className="relative whitespace-nowrap">
-              {t("button-text")}
-            </span>
-            <span className=" sm:relative grid size-11  sm:place-items-center text-white">
-              <ArrowRight
-                aria-hidden
-                className="size-5 transition-transform duration-500 group-hover:-rotate-45 absolute right-4 top-4 sm:top-3 sm:right-3"
-              />
-            </span>
-          </Link>
+          <CtaLink href="" label={t("button-text")} variant="hover-fill" />
         </div>
       </section>
     </div>

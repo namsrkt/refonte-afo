@@ -1,5 +1,6 @@
 "use client";
 
+import "@/features/home/hero/hero.css";
 import { cn } from "cn";
 import { useTranslations } from "next-intl";
 import { forwardRef, useRef } from "react";
@@ -9,6 +10,8 @@ import settingImage from "/public/image/setting.png";
 import figmaImage from "/public/image/figma.png";
 import Image from "next/image";
 import { AnimatedBeam } from "@/components/ui/animated-beam";
+import { CloudBank } from "@/features/home/hero/components/cloud-bank";
+import { SkyBackground } from "@/features/home/hero/components/sky-background";
 
 function TechnoSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -18,10 +21,14 @@ function TechnoSection() {
   const img4Ref = useRef<HTMLImageElement>(null);
   const img5Ref = useRef<HTMLImageElement>(null);
   const img6Ref = useRef<HTMLImageElement>(null);
-  const t = useTranslations("TestimonialSection");
+  const t = useTranslations("TechnoSection");
   return (
-    <div className="bg-[linear-gradient(180deg,#F7FAFD_0%,#4080D7_24.04%,#FBFDFD_100%)] h-screen py-24 px-10 xl:px-24">
-      <section className="flex items-center gap-10 lg:gap-0 justify-evenly  flex-col lg:flex-row">
+    <div className="relative isolate min-h-screen overflow-hidden px-10 pt-72 pb-24 xl:px-24">
+      <SkyBackground />
+      <CloudBank />
+      <CloudBank position="top" />
+
+      <section className="relative z-10 flex items-center gap-10 lg:gap-0 justify-evenly  flex-col lg:flex-row">
         <div className="flex flex-col gap-2.5 text-[#F7FAFD] max-w-150.25">
           <h2 className="w-fit self-center sm:self-auto py-1.25 px-2.5 border border-[#F7FAFD]/50 rounded-full font-light text-xs text-[#F7FAFD]/50">
             {t("question")}

@@ -95,10 +95,11 @@
     "deployNow": "Deploy Now",
     "documentation": "Documentation"
   },
-  "TestimonialSection":{
-    "question":"Technologies",
-    "title":"Some <highlight>technologies</highlight> that will power your platforms",
-    "description":"The technologies we use ensure high-performance, scalable, and secure platforms, tailored to your specific needs and the challenges of tomorrow."
+  "TechnoSection": {
+    "question": "Technologies",
+    "title": "Some <highlight>technologies</highlight> that will power your platforms",
+    "description": "The technologies we use ensure high-performance, scalable, and secure platforms, tailored to your specific needs and the challenges of tomorrow."
+  },
   "AboutSection": {
     "image-description": {
       "about-section": "Image representing an exchange"
@@ -150,12 +151,16 @@
         "title": "Discover our latest creations on Facebook",
         "excerpt": "Follow our latest projects, posts and news on our Facebook page."
       }
+    }
+  },
   "CollabSection": {
     "description": "They placed their trust in us for all of our services."
+  },
   "TestimonialSection": {
     "intro": "What our clients say about us",
     "title": "Customer testimonials",
     "description": "Discover our clients' reviews and feedback regarding their experience with AllForOne and the quality of our digital services."
+  },
   "HomeProcess": {
     "badge": "How does it work?",
     "title": "Our work process",
@@ -177,6 +182,8 @@
         "title": "Testing & Launch",
         "description": "We test the whole project to guarantee its quality"
       }
+    }
+  },
   "homeRealization": {
     "title": "Our Projects",
     "description": "Modern, smooth, and creative digital experiences designed to provide intuitive navigation, capture your users' attention, and strengthen your company's online presence and image.",

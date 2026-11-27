@@ -7,7 +7,7 @@ type Step = {
     key: "analysis" | "design" | "development" | "launch";
     icon: LucideIcon;
   };
-  
+
   const steps: Step[] = [
     { number: "01", key: "analysis", icon: Search },
     { number: "02", key: "design", icon: PenTool },
@@ -19,7 +19,7 @@ export default function HomeProcess(){
     const t = useTranslations("HomeProcess");
 
     return(
-        <section className="bg-slate-50 px-6 py-16 md:py-24">
+        <section className="bg-white px-6 py-16 md:py-24">
             <div className="flex flex-col items-center text-center">
                 <span className="rounded-full border-2 borber-gray-500 px-3 py-1 text-[10px] text-gray-500">
                     {t("badge")}
@@ -32,7 +32,7 @@ export default function HomeProcess(){
                 </p>
             </div>
             <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
-                { steps.map(({ number, key, icon: Icon }) => ( 
+                { steps.map(({ number, key, icon: Icon }) => (
                 <article className="flex flex-col items-center text-center mb-8">
                     <div className="relative">
                         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#2a4a67] text-white">
