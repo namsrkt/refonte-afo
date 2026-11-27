@@ -50,5 +50,33 @@
   "TestimonialsPage": {
     "title": "Témoignages",
     "description": "Contenu à venir."
+  },
+  "Footer": {
+    "tagline": "Reste à jour avec nos dernières actualités",
+    "newsletter": "Newsletter",
+    "emailPlaceholder": "Email",
+    "emailRequired": "L'email est requis",
+    "emailInvalid": "Adresse email invalide",
+    "submit": "Envoyer",
+    "infoTitle": "Informations",
+    "address": "Ambatoroaka, Antananarivo",
+    "country": "Madagascar",
+    "hours": "08:00 à 16:30",
+    "contactTitle": "Contact",
+    "navTitle": "Navigations",
+    "servicesTitle": "Nos services",
+    "services": {
+      "apps": "Application desktop & mobile",
+      "uiux": "UI/UX Design",
+      "graphic": "Graphic Design",
+      "community": "Community Management",
+      "admin": "Admin Sys & Réseau"
+    },
+    "copyright": "copyright {year}, allforone, tous droits réservés",
+    "social": {
+      "facebook": "Voir notre page Facebook",
+      "whatsapp": "Discuter sur WhatsApp",
+      "instagram": "Voir notre page Instagram"
+    }
   }
 }
