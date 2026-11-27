@@ -50,7 +50,13 @@
         "id": "ui-ux-design",
         "title": "UI/UX Design",
         "description": "An intuitive, user-centered application mockup built around the user experience.",
-        "tags": ["UX research", "Persona", "UI mockup", "Prototype", "Testing"],
+        "tags": [
+          "UX research",
+          "Persona",
+          "UI mockup",
+          "Prototype",
+          "Testing"
+        ],
         "imageAlt": "Interface mockup displayed on a screen"
       },
       {
@@ -82,7 +88,12 @@
         "id": "admin-sys-reseaux",
         "title": "Admin Sys & Networks",
         "description": "Setting up, securing and monitoring your infrastructure and networks.",
-        "tags": ["Cloud", "Cybersecurity", "Networks", "Deployment"],
+        "tags": [
+          "Cloud",
+          "Cybersecurity",
+          "Networks",
+          "Deployment"
+        ],
         "imageAlt": "Corporate infrastructure and networks"
       }
     ]
@@ -234,5 +245,41 @@
       "whatsapp": "Chat on WhatsApp",
       "instagram": "View our Instagram page"
     }
+  },
+  "ExpertiseSection": {
+    "title": "Areas of Expertise",
+    "description": "Our expertise in desktop and mobile development enables us to design innovative digital solutions, crafted to combine performance, accessibility, and an optimal user experience.",
+    "list-expertise": [
+      {
+        "title": "Front-End Development",
+        "description": "Modern, responsive interfaces to ensure a seamless user experience across all devices.",
+        "badge": [
+          "Responsive Design",
+          "Interactive interfaces",
+          "UI Optimization",
+          "Seamless navigation"
+        ]
+      },
+      {
+        "title": "Back-End Development",
+        "description": "Robust and secure systems that ensure the proper functioning of applications",
+        "badge": [
+          "Database",
+          "API & integration",
+          "Data security",
+          "Server management"
+        ]
+      },
+      {
+        "title": "Optimization & Deployment",
+        "description": "We optimize performance and handle the deployment of applications to ensure stability and speed.",
+        "badge": [
+          "Tests & correction",
+          "Deployment",
+          "Maintenance ",
+          "Monitoring & improvement"
+        ]
+      }
+    ]
   }
 }

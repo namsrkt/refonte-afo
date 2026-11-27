@@ -50,7 +50,13 @@
         "id": "ui-ux-design",
         "title": "UI/UX Design",
         "description": "Une application maquettée (UI/UX Design) intuitive et centrée sur l'expérience utilisateur.",
-        "tags": ["Recherche UX", "Persona", "Maquette UI", "Prototype", "Test"],
+        "tags": [
+          "Recherche UX",
+          "Persona",
+          "Maquette UI",
+          "Prototype",
+          "Test"
+        ],
         "imageAlt": "Maquette d'interface affichée sur un écran"
       },
       {
@@ -82,7 +88,12 @@
         "id": "admin-sys-reseaux",
         "title": "Admin Sys & réseaux",
         "description": "Mise en place, sécurisation et supervision de votre infrastructure et de vos réseaux.",
-        "tags": ["Cloud", "Cybersécurité", "Réseaux", "Mise en ligne"],
+        "tags": [
+          "Cloud",
+          "Cybersécurité",
+          "Réseaux",
+          "Mise en ligne"
+        ],
         "imageAlt": "Infrastructure et réseaux d'entreprise"
       }
     ]
@@ -234,5 +245,41 @@
       "whatsapp": "Discuter sur WhatsApp",
       "instagram": "Voir notre page Instagram"
     }
+  },
+  "ExpertiseSection": {
+    "title": "Expertises",
+    "description": "Notre expertise en développement desktop et mobile nous permet de concevoir des solutions digitales innovantes, pensées pour allier performance, accessibilité et expérience utilisateur optimale.",
+    "list-expertise": [
+      {
+        "title": "Développement Front-End",
+        "description": "Interfaces modernes, réactives pour garantir une expérience utilisateur fluide sur tous les appareils.",
+        "badge": [
+          "Responsive Design",
+          "Interfaces interactives",
+          "Optimisation UI",
+          "Navigation fluide"
+        ]
+      },
+      {
+        "title": "Développement Back-End",
+        "description": "Systèmes robustes et sécurisés permettant d’assurer le bon fonctionnement des applications",
+        "badge": [
+          "Base de données",
+          "API & intégration",
+          "Sécurité des données",
+          "Gestion serveur"
+        ]
+      },
+      {
+        "title": "Optimisation & Déploiement",
+        "description": "Nous optimisons les performances et assurons la mise en ligne des applications afin de garantir stabilité et la rapidité",
+        "badge": [
+          "Tests & correction",
+          "Déploiement",
+          "Maintenance ",
+          "Suivi & amélioration"
+        ]
+      }
+    ]
   }
 }
