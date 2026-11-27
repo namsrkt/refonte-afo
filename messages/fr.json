@@ -95,6 +95,19 @@
     "deployNow": "Déployer maintenant",
     "documentation": "Documentation"
   },
+  "AboutSection": {
+    "image-description":{
+      "about-section":"Image representant un échange"
+    },
+    "question":"Qui sommes nous?",
+    "title":"Transformons ensemble <highlight>vos idées</highlight> en expériences digitales moderne",
+    "description": "AllForOne est une agence digitale créative spécialisée dans la conception de solutions numériques modernes, intuitives et performantes",
+    "list-advantage":{
+      "0":"Disponible à tout moment",
+      "1":"Design moderne et responsive",
+      "2":"Performance optimisée"
+    },
+    "button-text":"Découvrir davantage"
   "ServicesPage": {
     "title": "Services",
     "description": "Contenu à venir."
