@@ -4,6 +4,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/common/navbar";
+import { FooterSection } from "@/features/footer/components/footer-section";
 import { SKY_SCRIPT } from "@/features/home/hero/sky-script";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
@@ -56,7 +57,8 @@ export default async function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: SKY_SCRIPT }} />
         <NextIntlClientProvider>
           <Navbar />
-          {children}
+          <main className="flex flex-1 flex-col">{children}</main>
+          <FooterSection />
         </NextIntlClientProvider>
       </body>
     </html>

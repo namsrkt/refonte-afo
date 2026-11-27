@@ -14,11 +14,18 @@ export type SkyLayer = {
   background: string;
 };
 
+export type SkyVariant = "hero" | "footer";
+
+export const SKY_CLEAR_DAY_GRADIENTS: Record<SkyVariant, string> = {
+  hero: "linear-gradient(to bottom, #0954B9 0%, #7EABE7 100%)",
+  footer: "linear-gradient(to bottom, #2865B8 0%, #689ADE 100%)",
+};
+
 export const SKY_LAYERS: SkyLayer[] = [
   {
     key: "clear-day",
     className: "sky-clear-day",
-    background: "linear-gradient(to bottom, #0954B9 0%, #7EABE7 100%)",
+    background: SKY_CLEAR_DAY_GRADIENTS.hero,
   },
   {
     key: "clear-night",
