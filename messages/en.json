@@ -129,6 +129,10 @@
     "title": "Testimonials",
     "description": "Content coming soon."
   },
+  "TestimonialSection": {
+    "intro": "What our clients say about us",
+    "title": "Customer testimonials",
+    "description": "Discover our clients' reviews and feedback regarding their experience with AllForOne and the quality of our digital services."
   "HomeProcess": {
     "badge": "How does it work?",
     "title": "Our work process",
