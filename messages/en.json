@@ -124,6 +124,29 @@
     "title": "Testimonials",
     "description": "Content coming soon."
   },
+  "homeRealization": {
+    "title": "Our Projects",
+    "description": "Modern, smooth, and creative digital experiences designed to provide intuitive navigation, capture your users' attention, and strengthen your company's online presence and image.",
+    "button": "See all projects"
+  },
+  "ProjectsRealizations": {
+    "atariaTech": {
+      "title": "Ataria Tech",
+      "description": "Website for selling IT and technological products"
+    },
+    "tantely": {
+      "title": "Tantely",
+      "description": "Website for selling health and wellness products"
+    },
+    "allforkids": {
+      "title": "AllForKids",
+      "description": "Website for selling IT and technological products"
+    },
+    "madadigitalsecurity": {
+      "title": "MadaDigitalSecurity",
+      "description": "Website for selling health and wellness products"
+    }
+  },
   "Footer": {
     "tagline": "Stay up to date with our latest news",
     "newsletter": "Newsletter",
