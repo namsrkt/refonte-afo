@@ -108,7 +108,7 @@
       "2":"Optimized performance"
     },
     "button-text":"Discover more"
-  "ServicesPage": {
+  ,"ServicesPage": {
     "title": "Services",
     "description": "Content coming soon."
   },
@@ -151,5 +151,6 @@
       "whatsapp": "Chat on WhatsApp",
       "instagram": "View our Instagram page"
     }
+  }
   }
 }

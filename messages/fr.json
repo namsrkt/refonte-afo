@@ -108,7 +108,7 @@
       "2":"Performance optimisée"
     },
     "button-text":"Découvrir davantage"
-  "ServicesPage": {
+  ,"ServicesPage": {
     "title": "Services",
     "description": "Contenu à venir."
   },
@@ -152,4 +152,5 @@
       "instagram": "Voir notre page Instagram"
     }
   }
+}
 }
