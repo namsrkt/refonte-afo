@@ -1,10 +1,14 @@
 "use client";
 
-import { SKY_LAYERS } from "../config";
+import { SKY_CLEAR_DAY_GRADIENTS, SKY_LAYERS, type SkyVariant } from "../config";
 import { useDayNight } from "../hooks/use-day-night";
 import { StarField } from "./star-field";
 
-export function SkyBackground() {
+type SkyBackgroundProps = {
+  variant?: SkyVariant;
+};
+
+export function SkyBackground({ variant = "hero" }: SkyBackgroundProps) {
   useDayNight();
 
   return (
@@ -13,7 +17,12 @@ export function SkyBackground() {
         <div
           key={layer.key}
           className={`sky-layer ${layer.className}`}
-          style={{ background: layer.background }}
+          style={{
+            background:
+              layer.key === "clear-day"
+                ? SKY_CLEAR_DAY_GRADIENTS[variant]
+                : layer.background,
+          }}
         />
       ))}
       <div className="sky-glow absolute inset-x-0 bottom-0 h-1/3 bg-[radial-gradient(ellipse_at_bottom,rgba(42,79,158,0.8),transparent_70%)]" />

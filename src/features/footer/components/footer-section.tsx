@@ -1,6 +1,6 @@
 import "@/features/home/hero/hero.css";
 import type { ComponentType, SVGProps } from "react";
-import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock, Image, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { cacheLife } from "next/cache";
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/common/container";
@@ -37,7 +37,7 @@ export async function FooterSection() {
 
   return (
     <footer className="relative isolate overflow-hidden text-white">
-      <SkyBackground />
+      <SkyBackground variant="footer" />
       <LightningField />
       <CloudBank position="top" />
       <WeatherEffects />
@@ -149,9 +149,13 @@ export async function FooterSection() {
 
       <div aria-hidden="true" className="relative z-0 mt-6 select-none">
         <Container>
-          <span className="block whitespace-nowrap text-center text-[22vw] font-semibold leading-none tracking-tight text-white/25 lg:text-[200px]">
-            AllForOne
-          </span>
+              <img
+                src="/footer-wave.svg"
+                alt=""
+                width={1920}
+                height={100}
+                className="w-full"
+              />
         </Container>
       </div>
 
