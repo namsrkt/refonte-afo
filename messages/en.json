@@ -15,6 +15,78 @@
     "blog": "Blog",
     "testimonials": "Testimonials"
   },
+  "Hero": {
+    "titleLine1": "Transform your ideas",
+    "titleLine2": "into digital experiences",
+    "ctaQuote": "Request a quote",
+    "ctaContact": "Contact us",
+    "social": {
+      "whatsapp": "Chat on WhatsApp",
+      "instagram": "View our Instagram page",
+      "facebook": "View our Facebook page",
+      "twitter": "Follow us on Twitter"
+    }
+  },
+  "HomeServices": {
+    "title": "Services",
+    "description": "We turn your technical challenges into growth opportunities with complete and proven expertise.",
+    "quoteCta": "Request a quote",
+    "moreCta": "Learn more",
+    "items": [
+      {
+        "id": "app-desktop-mobile",
+        "title": "Desktop & Mobile Applications",
+        "description": "A custom application tailored to iOS/Android or desktop platforms.",
+        "tags": [
+          "iOS & Android app",
+          "Custom website",
+          "SaaS",
+          "Showcase website",
+          "E-commerce"
+        ],
+        "imageAlt": "Project dashboard displayed on a tablet"
+      },
+      {
+        "id": "ui-ux-design",
+        "title": "UI/UX Design",
+        "description": "An intuitive, user-centered application mockup built around the user experience.",
+        "tags": ["UX research", "Persona", "UI mockup", "Prototype", "Testing"],
+        "imageAlt": "Interface mockup displayed on a screen"
+      },
+      {
+        "id": "graphic-design",
+        "title": "Graphic Design",
+        "description": "Logo, poster, brochure and marketing material design, along with visual presentations.",
+        "tags": [
+          "Social media posts",
+          "Logo",
+          "Branding",
+          "Infographics",
+          "Visual identity"
+        ],
+        "imageAlt": "Visual identity variations applied to fabric"
+      },
+      {
+        "id": "community-management",
+        "title": "Community Management",
+        "description": "Growing and engaging your social media communities with content that reflects who you are.",
+        "tags": [
+          "Social media management",
+          "SEA/SEO",
+          "Video editing",
+          "Photography"
+        ],
+        "imageAlt": "Social media icons around a person at a computer"
+      },
+      {
+        "id": "admin-sys-reseaux",
+        "title": "Admin Sys & Networks",
+        "description": "Setting up, securing and monitoring your infrastructure and networks.",
+        "tags": ["Cloud", "Cybersecurity", "Networks", "Deployment"],
+        "imageAlt": "Corporate infrastructure and networks"
+      }
+    ]
+  },
   "HomePage": {
     "title": "To get started, edit the <code>page.tsx</code> file.",
     "instructions": "Looking for a starting point or more instructions? Head over to <templates>Templates</templates> or the <learning>Learning</learning> center.",
@@ -23,7 +95,20 @@
     "deployNow": "Deploy Now",
     "documentation": "Documentation"
   },
-  "ServicesPage": {
+  "AboutSection": {
+    "image-description":{
+      "about-section":"Image representing an exchange"
+    },
+    "question":"Who are we?",
+    "title": "Let’s work together to transform <highlight>your ideas</highlight> into modern digital experiences.",
+    "description": "AllForOne is a creative digital agency specializing in the design of modern, intuitive, and high-performance digital solutions.",
+    "list-advantage":{
+      "0":"Available at any time",
+      "1":"Modern and responsive design",
+      "2":"Optimized performance"
+    },
+    "button-text":"Discover more"
+  ,"ServicesPage": {
     "title": "Services",
     "description": "Content coming soon."
   },
@@ -61,5 +146,34 @@
       "title": "MadaDigitalSecurity",
       "description": "Website for selling health and wellness products"
     }
+  },
+  "Footer": {
+    "tagline": "Stay up to date with our latest news",
+    "newsletter": "Newsletter",
+    "emailPlaceholder": "Email",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email address",
+    "submit": "Send",
+    "infoTitle": "Information",
+    "address": "Ambatoroaka, Antananarivo",
+    "country": "Madagascar",
+    "hours": "08:00 to 16:30",
+    "contactTitle": "Contact",
+    "navTitle": "Navigation",
+    "servicesTitle": "Our services",
+    "services": {
+      "apps": "Desktop & mobile application",
+      "uiux": "UI/UX Design",
+      "graphic": "Graphic Design",
+      "community": "Community Management",
+      "admin": "Admin Sys & Network"
+    },
+    "copyright": "copyright {year}, allforone, all rights reserved",
+    "social": {
+      "facebook": "View our Facebook page",
+      "whatsapp": "Chat on WhatsApp",
+      "instagram": "View our Instagram page"
+    }
+  }
   }
 }

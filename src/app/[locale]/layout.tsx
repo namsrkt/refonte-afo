@@ -4,12 +4,14 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Navbar } from "@/components/common/navbar";
+import { FooterSection } from "@/features/footer/components/footer-section";
+import { SKY_SCRIPT } from "@/features/home/hero/sky-script";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
 const poppins = Poppins({
   variable: "--font-poppins",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -48,12 +50,15 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
+      suppressHydrationWarning
       className={`${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col pt-24">
+        <script dangerouslySetInnerHTML={{ __html: SKY_SCRIPT }} />
         <NextIntlClientProvider>
           <Navbar />
-          {children}
+          <main className="flex flex-1 flex-col">{children}</main>
+          <FooterSection />
         </NextIntlClientProvider>
       </body>
     </html>

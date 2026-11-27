@@ -1,12 +1,14 @@
-import HeroSection from "@/features/home/heroSection/hero-section";
+import { HeroSection } from "@/features/home/hero/components/hero-section";
+import { ServicesSection } from "@/features/home/services/components/services-section";
+import AboutSection from "@/features/home/aboutSection/about-section";
 import HomeRealization from "@/features/home/homeRealization/hero-realization";
 
-
-export default async function Home() {
-
+export default function Home() {
   return (
     <>
-      <HeroSection/>
+      <HeroSection />
+      <ServicesSection />
+      <AboutSection />
       <HomeRealization/>
     </>
   );
