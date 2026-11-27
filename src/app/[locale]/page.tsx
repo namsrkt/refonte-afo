@@ -3,6 +3,7 @@ import { ServicesSection } from "@/features/home/services/components/services-se
 import AboutSection from "@/features/home/aboutSection/about-section";
 import HomeRealization from "@/features/home/homeRealization/hero-realization";
 import TechnoSection from "@/features/home/technoSection/techno-section";
+import HomeProcess from "@/features/home/homeProcess/home-process";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <HomeRealization/>
       <TechnoSection />
+      <HomeProcess/>
     </>
   );
 }

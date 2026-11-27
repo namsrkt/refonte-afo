@@ -129,6 +129,27 @@
     "title": "Testimonials",
     "description": "Content coming soon."
   },
+  "HomeProcess": {
+    "badge": "How does it work?",
+    "title": "Our work process",
+    "subtitle": "Flexible offers tailored to your needs to support you in creating modern, high-performing and accessible digital solutions.",
+    "steps": {
+      "analysis": {
+        "title": "Analysis",
+        "description": "Understanding your business, your needs and your goals"
+      },
+      "design": {
+        "title": "Design",
+        "description": "Creating interfaces centered on user experience"
+      },
+      "development": {
+        "title": "Development",
+        "description": "Building high-performing and smooth digital solutions"
+      },
+      "launch": {
+        "title": "Testing & Launch",
+        "description": "We test the whole project to guarantee its quality"
+      }
   "homeRealization": {
     "title": "Our Projects",
     "description": "Modern, smooth, and creative digital experiences designed to provide intuitive navigation, capture your users' attention, and strengthen your company's online presence and image.",
