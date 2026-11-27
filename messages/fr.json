@@ -4,12 +4,88 @@
     "description": "Application Next.js pour la refonte AFO"
   },
   "LocaleSwitcher": {
-    "label": "Changer de langue"
+    "label": "Langue"
   },
   "Nav": {
+    "brand": "AllForOne",
     "label": "Navigation principale",
-    "brand": "Refonte AFO",
-    "home": "Accueil"
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Réalisations",
+    "blog": "Blog",
+    "testimonials": "Témoignages"
+  },
+  "Hero": {
+    "titleLine1": "Transformez vos idées",
+    "titleLine2": "en expériences digitales",
+    "ctaQuote": "Demander un devis",
+    "ctaContact": "Contactez-Nous",
+    "social": {
+      "whatsapp": "Discuter sur WhatsApp",
+      "instagram": "Voir notre page Instagram",
+      "facebook": "Voir notre page Facebook",
+      "twitter": "Suivre sur Twitter"
+    }
+  },
+  "HomeServices": {
+    "title": "Services",
+    "description": "Nous transformons vos défis techniques en opportunités de croissance grâce à une expertise complète et maîtrisée.",
+    "quoteCta": "Demander un devis",
+    "moreCta": "En savoir plus",
+    "items": [
+      {
+        "id": "app-desktop-mobile",
+        "title": "Application Desktop & Mobile",
+        "description": "Une application spécifique, adaptée aux plateformes iOS/Android ou Desktop.",
+        "tags": [
+          "Application iOS & Android",
+          "Site web sur-mesure",
+          "SaaS",
+          "Site vitrine",
+          "E-commerce"
+        ],
+        "imageAlt": "Tableau de bord de projet affiché sur une tablette"
+      },
+      {
+        "id": "ui-ux-design",
+        "title": "UI/UX Design",
+        "description": "Une application maquettée (UI/UX Design) intuitive et centrée sur l'expérience utilisateur.",
+        "tags": ["Recherche UX", "Persona", "Maquette UI", "Prototype", "Test"],
+        "imageAlt": "Maquette d'interface affichée sur un écran"
+      },
+      {
+        "id": "graphic-design",
+        "title": "Graphic Design",
+        "description": "Conception de logos, d'affiches, de brochures, de supports marketing, ainsi que des présentations visuelles.",
+        "tags": [
+          "Post réseaux sociaux",
+          "Logo",
+          "Branding",
+          "Infographie",
+          "Identité visuelle"
+        ],
+        "imageAlt": "Déclinaisons d'une identité visuelle sur textile"
+      },
+      {
+        "id": "community-management",
+        "title": "Community Management",
+        "description": "Animation et croissance de vos communautés sur les réseaux sociaux, avec des contenus qui vous ressemblent.",
+        "tags": [
+          "Gestion des réseaux sociaux",
+          "SEA/SEO",
+          "Montages vidéo",
+          "Photographie"
+        ],
+        "imageAlt": "Icônes de réseaux sociaux autour d'une personne sur ordinateur"
+      },
+      {
+        "id": "admin-sys-reseaux",
+        "title": "Admin Sys & réseaux",
+        "description": "Mise en place, sécurisation et supervision de votre infrastructure et de vos réseaux.",
+        "tags": ["Cloud", "Cybersécurité", "Réseaux", "Mise en ligne"],
+        "imageAlt": "Infrastructure et réseaux d'entreprise"
+      }
+    ]
   },
   "HomePage": {
     "title": "Pour commencer, modifiez le fichier <code>page.tsx</code>.",
@@ -32,5 +108,48 @@
       "2":"Performance optimisée"
     },
     "button-text":"Découvrir davantage"
+  "ServicesPage": {
+    "title": "Services",
+    "description": "Contenu à venir."
+  },
+  "ProjectsPage": {
+    "title": "Réalisations",
+    "description": "Contenu à venir."
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Contenu à venir."
+  },
+  "TestimonialsPage": {
+    "title": "Témoignages",
+    "description": "Contenu à venir."
+  },
+  "Footer": {
+    "tagline": "Reste à jour avec nos dernières actualités",
+    "newsletter": "Newsletter",
+    "emailPlaceholder": "Email",
+    "emailRequired": "L'email est requis",
+    "emailInvalid": "Adresse email invalide",
+    "submit": "Envoyer",
+    "infoTitle": "Informations",
+    "address": "Ambatoroaka, Antananarivo",
+    "country": "Madagascar",
+    "hours": "08:00 à 16:30",
+    "contactTitle": "Contact",
+    "navTitle": "Navigations",
+    "servicesTitle": "Nos services",
+    "services": {
+      "apps": "Application desktop & mobile",
+      "uiux": "UI/UX Design",
+      "graphic": "Graphic Design",
+      "community": "Community Management",
+      "admin": "Admin Sys & Réseau"
+    },
+    "copyright": "copyright {year}, allforone, tous droits réservés",
+    "social": {
+      "facebook": "Voir notre page Facebook",
+      "whatsapp": "Discuter sur WhatsApp",
+      "instagram": "Voir notre page Instagram"
+    }
   }
 }
