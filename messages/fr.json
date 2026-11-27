@@ -207,6 +207,55 @@
       "description": "Site web pour vendre des produits de santé et de bien-être"
     }
   },
+  "offres": {
+    "aPartirDe": "A PARTIR DE",
+    "parMois": "/ mois",
+    "inclus": "INCLUS",
+    "devis": "Demander un devis",
+    "vitrine": {
+      "nom": "Site vitrine",
+      "prix": "Ar200 000",
+      "description": "Une solution idéale pour présenter votre entreprise et renforcer votre présence en ligne",
+      "inclus": [
+        "Design moderne et responsive",
+        "Jusqu'à 5 pages",
+        "Optimisation mobile",
+        "Formulaire de contact",
+        "Intégration réseaux sociaux",
+        "SEO de base",
+        "Hébergement & mise en ligne"
+      ]
+    },
+    "professionnel": {
+      "nom": "Site professionnel",
+      "prix": "Ar500 000",
+      "description": "Une solution complète pour les entreprises souhaitant offrir une expérience utilisateur",
+      "inclus": [
+        "Design UI/UX personnalisé",
+        "Site responsive",
+        "Animations modernes",
+        "Optimisation des performances",
+        "SEO optimisé",
+        "Intégration WhatsApp / Messenger",
+        "Tableau d'administration simple",
+        "Support technique"
+      ]
+    },
+    "ecommerce": {
+      "nom": "E-commerce",
+      "prix": "Ar700 000",
+      "description": "Une plateforme e-commerce performante conçue pour vendre vos produits en ligne",
+      "inclus": [
+        "Catalogue produits",
+        "Gestion des commandes",
+        "Paiement en ligne",
+        "Responsive design",
+        "Gestion des utilisateurs",
+        "Sécurité renforcée",
+        "Support & maintenance"
+      ]
+    }
+  },
   "Footer": {
     "tagline": "Reste à jour avec nos dernières actualités",
     "newsletter": "Newsletter",

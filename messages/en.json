@@ -207,6 +207,55 @@
       "description": "Website for selling health and wellness products"
     }
   },
+  "offres": {
+    "aPartirDe": "STARTING FROM",
+    "parMois": "/ month",
+    "inclus": "INCLUDED",
+    "devis": "Request a quote",
+    "vitrine": {
+      "nom": "Showcase website",
+      "prix": "Ar200,000",
+      "description": "An ideal solution to showcase your business and strengthen your online presence",
+      "inclus": [
+        "Modern and responsive design",
+        "Up to 5 pages",
+        "Mobile optimization",
+        "Contact form",
+        "Social media integration",
+        "Basic SEO",
+        "Hosting & going live"
+      ]
+    },
+    "professionnel": {
+      "nom": "Professional website",
+      "prix": "Ar500,000",
+      "description": "A complete solution for businesses that want to offer a great user experience",
+      "inclus": [
+        "Custom UI/UX design",
+        "Responsive website",
+        "Modern animations",
+        "Performance optimization",
+        "Optimized SEO",
+        "WhatsApp / Messenger integration",
+        "Simple admin dashboard",
+        "Technical support"
+      ]
+    },
+    "ecommerce": {
+      "nom": "E-commerce",
+      "prix": "Ar700,000",
+      "description": "A high-performance e-commerce platform built to sell your products online",
+      "inclus": [
+        "Product catalog",
+        "Order management",
+        "Online payment",
+        "Responsive design",
+        "User management",
+        "Enhanced security",
+        "Support & maintenance"
+      ]
+    }
+  },
   "Footer": {
     "tagline": "Stay up to date with our latest news",
     "newsletter": "Newsletter",
